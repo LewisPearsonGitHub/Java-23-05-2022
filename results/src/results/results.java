@@ -8,8 +8,8 @@ public class results {
 	public float percentage;
 	
 	public static void main(String[] args) {
-		int physics = 25;
-		int chemistry = 25;	
+		int physics =15;
+		int chemistry = 15;	
 		int biology = 25;	
 		int total = physics + chemistry + biology;
 		float percentage = 0;
@@ -25,6 +25,10 @@ public class results {
 	
 	public static void method2(float percentage, int total) {
 		percentage = (total *100)/450;
-		System.out.println("This gives an overall percentage of " + percentage + "%.");
+		if (percentage >60) {
+		System.out.println("This gives an overall percentage of " + percentage + "%. Congratulations, you've passed!");
+		} else {
+			System.out.println("\nYou only got an overall percentage of " + percentage + "%.\n           You have failed.");
+		}
 	}
 }
