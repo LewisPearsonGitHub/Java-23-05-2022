@@ -27,7 +27,11 @@ public class operators {
 		System.out.println(int1 / int2);
 	}
 	public static void division1(double dub1, double dub2) {
+	if (dub1 < dub2) {
 	System.out.println(dub1 / dub2);
+	} else {
+		System.out.println("This division cannot be performed.");
+	}
 	}
 	
 	
